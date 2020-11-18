@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project source="2.16.1.2.exe" version="1.0">
+This file is intended to be loaded by Logisim http://logisim.altervista.org
+<lib desc="#Wiring" name="0"/>
+  <lib desc="#Gates" name="1"/>
+  <lib desc="#TTL" name="2"/>
+  <lib desc="#Plexers" name="3">
+    <tool name="Multiplexer">
+      <a name="enable" val="false"/>
+    </tool>
+    <tool name="Demultiplexer">
+      <a name="enable" val="false"/>
+    </tool>
+    <tool name="Decoder">
+      <a name="enable" val="false"/>
+    </tool>
+  </lib>
+  <lib desc="#Arithmetic" name="4"/>
+  <lib desc="#Memory" name="5"/>
+  <lib desc="#I/O" name="6"/>
+  <lib desc="#Base" name="7">
+    <tool name="Text Tool">
+      <a name="text" val=""/>
+      <a name="font" val="Dialog plain 12"/>
+      <a name="color" val="#000000"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
+    </tool>
+  </lib>
+  <main name="main"/>
+  <options>
+    <a name="gateUndefined" val="ignore"/>
+    <a name="simlimit" val="1000"/>
+    <a name="simrand" val="0"/>
+  </options>
+  <mappings>
+    <tool lib="7" map="Button2" name="Poke Tool"/>
+    <tool lib="7" map="Button3" name="Menu Tool"/>
+    <tool lib="7" map="Ctrl Button1" name="Menu Tool"/>
+  </mappings>
+  <toolbar>
+    <tool lib="7" name="Poke Tool"/>
+    <tool lib="7" name="Edit Tool"/>
+    <sep/>
+    <tool lib="7" name="Text Tool">
+      <a name="text" val=""/>
+      <a name="font" val="Dialog plain 12"/>
+      <a name="color" val="#000000"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
+    </tool>
+    <tool lib="0" name="Pin">
+      <a name="tristate" val="false"/>
+    </tool>
+    <tool lib="0" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+    </tool>
+    <tool lib="1" name="NOT Gate"/>
+    <tool lib="1" name="AND Gate"/>
+    <tool lib="1" name="OR Gate"/>
+  </toolbar>
+  <circuit name="main">
+    <a name="circuit" val="main"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="Dialog plain 12"/>
+    <a name="clabelcolor" val="#000000"/>
+    <wire from="(620,520)" to="(690,520)"/>
+    <wire from="(690,470)" to="(690,520)"/>
+    <wire from="(620,470)" to="(620,520)"/>
+    <wire from="(690,520)" to="(760,520)"/>
+    <wire from="(760,470)" to="(760,520)"/>
+    <wire from="(740,460)" to="(740,490)"/>
+    <wire from="(740,460)" to="(750,460)"/>
+    <wire from="(670,460)" to="(680,460)"/>
+    <wire from="(670,460)" to="(670,490)"/>
+    <wire from="(670,490)" to="(740,490)"/>
+    <wire from="(600,460)" to="(600,490)"/>
+    <wire from="(600,460)" to="(610,460)"/>
+    <wire from="(600,490)" to="(670,490)"/>
+    <wire from="(570,490)" to="(600,490)"/>
+    <wire from="(570,520)" to="(620,520)"/>
+    <wire from="(580,450)" to="(610,450)"/>
+    <wire from="(780,450)" to="(800,450)"/>
+    <wire from="(650,410)" to="(650,450)"/>
+    <wire from="(650,450)" to="(680,450)"/>
+    <wire from="(640,450)" to="(650,450)"/>
+    <wire from="(720,410)" to="(730,410)"/>
+    <wire from="(720,410)" to="(720,450)"/>
+    <wire from="(720,450)" to="(750,450)"/>
+    <wire from="(710,450)" to="(720,450)"/>
+    <wire from="(650,410)" to="(660,410)"/>
+    <comp lib="0" loc="(800,450)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="4"/>
+      <a name="label" val="c3 c2 c1c0"/>
+    </comp>
+    <comp lib="5" loc="(640,450)" name="Register">
+      <a name="width" val="4"/>
+    </comp>
+    <comp lib="0" loc="(570,520)" name="Clock">
+      <a name="label" val="clk"/>
+    </comp>
+    <comp lib="5" loc="(780,450)" name="Register">
+      <a name="width" val="4"/>
+    </comp>
+    <comp lib="0" loc="(730,410)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="4"/>
+      <a name="label" val="b3b2b1b0"/>
+    </comp>
+    <comp lib="0" loc="(660,410)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="4"/>
+      <a name="label" val="a3a2a1a0"/>
+    </comp>
+    <comp lib="5" loc="(710,450)" name="Register">
+      <a name="width" val="4"/>
+    </comp>
+    <comp lib="0" loc="(570,490)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="temporizador"/>
+    </comp>
+    <comp lib="0" loc="(580,450)" name="Pin">
+      <a name="width" val="4"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="data"/>
+    </comp>
+  </circuit>
+</project>
